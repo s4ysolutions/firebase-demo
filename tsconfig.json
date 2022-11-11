@@ -2,7 +2,6 @@
   "compilerOptions": {
     "module": "esnext",
     "allowJs": false,
-    "baseUrl": "./src",
     "declaration": true,
     "esModuleInterop": true,
     "moduleResolution": "node",

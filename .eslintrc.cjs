@@ -123,7 +123,6 @@ module.exports = {
     'quotes': ['error', 'single'],
     'semi': ['error', 'always'],
     'no-console': ['warn'],
-    'no-unused-vars': ['warn'],
     'comma-dangle': ['error', 'always-multiline'],
     'comma-spacing': ['warn', { 'before': false, 'after': true }],
     'key-spacing': ['warn', { }],
@@ -144,6 +143,10 @@ module.exports = {
      // https://stackoverflow.com/questions/63961803/eslint-says-all-enums-in-typescript-app-are-already-declared-in-the-upper-scope
      'no-shadow': 'off',
      '@typescript-eslint/no-shadow': ['error'],
+    // https://stackoverflow.com/questions/55280555/typescript-eslint-eslint-plugin-error-route-is-defined-but-never-used-no-un
+    // 'no-unused-vars': ['warn'],
+    'no-unused-vars': 'off',
+    '@typescript-eslint/no-unused-vars': 'error',
   },
   'globals': {
     '_': true,
@@ -160,13 +163,6 @@ module.exports = {
     'initVault': true,
     'react-hooks/rules-of-hooks': 'readonly',
     'react-hooks/exhaustive-deps': 'readonly',
-    // https://stackoverflow.com/questions/63961803/eslint-says-all-enums-in-typescript-app-are-already-declared-in-the-upper-scope
-    'no-shadow': 'off',
-    '@typescript-eslint/no-shadow': ['error'],
-    // https://stackoverflow.com/questions/55280555/typescript-eslint-eslint-plugin-error-route-is-defined-but-never-used-no-un
-    // 'no-unused-vars': ['warn'],
-    'no-unused-vars': 'off',
-    '@typescript-eslint/no-unused-vars': 'error',
   },
   'settings': {
     'react': {
