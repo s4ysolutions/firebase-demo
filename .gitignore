@@ -12,3 +12,4 @@ session.vim
 old
 .DS_Store
 src/fb/config.ts
+src/fb/appCheck.json

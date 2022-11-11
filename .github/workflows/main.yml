@@ -33,9 +33,11 @@ jobs:
 
       - name: build
         env:
+          APPCHECK_CONFIG: ${{ secrets.APPCHECK_CONFIG }}
           FIREBASE_CONFIG: ${{ secrets.FIREBASE_CONFIG }}
         run: |
           echo $FIREBASE_CONFIG > src/fb/config.ts
+          echo $APPCHECK_CONFIG > src/fb/appCheck.json
           npm run build
 
       - name: install firebase-tools
