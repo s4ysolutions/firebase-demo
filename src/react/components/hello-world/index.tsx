@@ -3,9 +3,9 @@ import storage from '../../../fb/storage';
 import {ref, uploadString} from 'firebase/storage';
 import {v4 as uuidv4} from 'uuid';
 
-const name = `${uuidv4()}.txt`;
 
 const handleClick = () => {
+  const name = `${uuidv4()}.txt`;
   const storageRef = ref(storage, name);
   const message = 'This is my message.';
   uploadString(storageRef, message).then((snapshot) => {

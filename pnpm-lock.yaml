@@ -1,6 +1,7 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@firebase/app': ^0.8.4
   '@pmmmwh/react-refresh-webpack-plugin': ^0.5.9
   '@types/chai': ^4.3.4
   '@types/chai-string': ^1.4.2
@@ -47,6 +48,7 @@ specifiers:
   webpack-merge: ^5.8.0
 
 dependencies:
+  '@firebase/app': 0.8.4
   firebase: 9.14.0
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
@@ -1608,10 +1610,8 @@ packages:
     dev: true
     optional: true
 
-  /ajv-formats/2.1.1_ajv@8.11.0:
+  /ajv-formats/2.1.1:
     resolution: {integrity: sha512-Wx0Kx52hxE7C18hkMEggYlEifqWZtYaRgouJor+WMdPnQyEK13vgEWyVNup7SoeeoLMsr4kf5h6dOW11I15MUA==}
-    peerDependencies:
-      ajv: ^8.0.0
     peerDependenciesMeta:
       ajv:
         optional: true
@@ -3627,7 +3627,7 @@ packages:
     dependencies:
       '@apidevtools/json-schema-ref-parser': 9.0.9
       ajv: 8.11.0
-      ajv-formats: 2.1.1_ajv@8.11.0
+      ajv-formats: 2.1.1
       body-parser: 1.20.1
       content-type: 1.0.4
       deep-freeze: 0.0.1
@@ -7126,7 +7126,7 @@ packages:
     dependencies:
       '@types/json-schema': 7.0.11
       ajv: 8.11.0
-      ajv-formats: 2.1.1_ajv@8.11.0
+      ajv-formats: 2.1.1
       ajv-keywords: 5.1.0_ajv@8.11.0
     dev: true
 
